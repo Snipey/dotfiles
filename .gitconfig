@@ -1,0 +1,7 @@
+[user]
+	name = Stephen F
+	email = snipeydev@gmail.com
+[color]
+	ui = true
+[init]
+	defaultBranch = main
