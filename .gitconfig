@@ -4,4 +4,10 @@
 [color]
 	ui = true
 [init]
-	defaultBranch = main
+  defaultBranch = main
+[alias]
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch --all
+  remotes = remote --verbose
+
