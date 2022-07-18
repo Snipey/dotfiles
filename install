@@ -28,7 +28,7 @@ if [ "$os" = "Darwin" ]; then
         mac.yml
 elif [ "$os" = "Linux" ]; then
     GITHUB_PW=$github_pw \
-    ansible-playbook --ask-become-pass -i hosts linux.yml
+    ansible-playbook --ask-become-pass -i hosts linux.yml --check
 else
    echo "Unknow OS: $os"
    exit 1
