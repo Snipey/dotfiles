@@ -2,11 +2,15 @@
 
 os="$(uname)"
 
+
 if [ "$os" = "Darwin" ]; then
     ansible-playbook --ask-become-pass \
         -i hosts \
         mac.yml
 elif [ "$os" = "Linux" ]; then
+    # Installs ansible
+    apt-get update && apt-get install -y ansible
+
     GITHUB_PW=$github_pw \
     ansible-playbook --ask-become-pass -i hosts linux.yml --check
 else
