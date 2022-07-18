@@ -1,24 +1,4 @@
 #!/usr/bin/env sh
-help() {
-    echo "Usage: ./install [-p arg] [-w arg] [-d arg] [-g arg]"
-    echo "-g (the password for the github account)"
-    echo "-h (print this message)"
-}
-
-while getopts ':p:w:d:g:h' opt; do
-    case $opt in
-        g)
-            github_pw=$OPTARG
-            ;;
-        h)
-            help
-            exit
-            ;;
-        ?)
-            echo "Invalid Parameter given. $(help)"
-            ;;
-    esac
-done
 
 os="$(uname)"
 
