@@ -9,5 +9,5 @@ Open your terminal and run the following commands
 
 
 ```sh
-curl -L setup.thenull.dev | bash
+curl -L setup.thenull.dev | sudo bash
 ```
