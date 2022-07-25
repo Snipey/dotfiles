@@ -1,4 +1,0 @@
-- name: Set up Linux workstation
-  hosts: local
-  roles:
-    - zsh

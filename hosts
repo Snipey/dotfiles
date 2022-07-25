@@ -1,5 +1,0 @@
-[local]
-locahost
-
-[local:vars]
-ansible_connection=local
